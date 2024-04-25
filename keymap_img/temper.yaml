@@ -4,156 +4,220 @@ layers:
     - W
     - F
     - P
-    - B
-    - J
+    - {t: B, h: med}
+    - {t: J, h: med}
     - L
     - U
     - Y
-    - {t: '''', s: '"'}
-  - [A, R, S, T, G, M, N, E, I, O]
-  - - Z
-    - X
-    - C
-    - D
-    - V
-    - K
-    - H
-    - {t: ',', s: ;}
-    - {t: ., s: ':'}
-    - {t: '?', s: '!'}
-  - - ⌘
-    - num
-    - {t: ⇧, s: ⇪}
-    - SPACE
-    - nav
-    - {t: BACKSPACE, s: Alt+ BACKSPACE}
-  qwerty:
-  - [Q, W, E, R, T, Y, U, I, O, P]
-  - - A
-    - S
-    - D
-    - F
-    - G
-    - H
-    - J
-    - K
-    - L
     - {t: ;, s: ':'}
-  - - Z
-    - X
-    - C
-    - V
-    - B
-    - N
-    - M
-    - {t: ',', s: <}
-    - {t: ., s: '>'}
-    - /
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  num:
-  - - '~'
-    - '@'
-    - '{'
-    - '}'
-    - '%'
-    - '*'
-    - '7'
-    - '8'
-    - '9'
-    - {t: '-', s: _}
-  - [^, '#', (, ), $, _, '4', '5', '6', +]
-  - - {t: '&', s: '|'}
-    - <
-    - {t: '[', s: '{'}
-    - {t: ']', s: '}'}
-    - '>'
-    - {t: /, s: \}
-    - '1'
-    - '2'
-    - '3'
-    - {t: '=', s: +}
-  - - {t: ▽, type: trans}
-    - {type: held}
-    - {t: ▽, type: trans}
-    - '0'
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+  - - {t: A, h: ⌘}
+    - {t: R, h: ⎇}
+    - {t: S, h: ⌃}
+    - {t: T, h: ⇧}
+    - {t: G, h: mou}
+    - {t: M, h: mou}
+    - {t: N, h: ⇧}
+    - {t: E, h: ⌃}
+    - {t: I, h: ⎇}
+    - {t: O, h: ⌘}
+  - - {t: Z, h: ⌘}
+    - {t: X, h: ⎇}
+    - {t: C, h: ⌃}
+    - {t: D, h: ⇧}
+    - {t: V, h: fun}
+    - {t: K, h: fun}
+    - {t: H, h: ⇧}
+    - {t: ',', h: ⌃, s: <}
+    - {t: ., h: ⎇, s: '>'}
+    - {t: /, h: ⌘}
+  - - {t: ↹, h: num}
+    - {t: SPACE, h: nav}
+    - {t: ENTER, h: mir}
+    - {t: ENTER, h: mir}
+    - {t: BSPC, h: nav}
+    - {t: DEL, h: num}
   nav:
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - HOME
-    - END
+  - [HOME, PAGE UP, UP ARROW, PAGE DOWN, END, END, PAGE DOWN, UP ARROW, PAGE UP, HOME]
+  - [⌘, LEFT ARROW, DOWN ARROW, →, ⇪, CAPS, →, DOWN ARROW, ←, ⌘]
+  - [⌘, ⎇, ⌃, ⇧, INS, INS, ⇧, ⌃, ⎇, ⌘]
+  - - ↹
+    - {t: SPACE, type: held}
+    - ENTER
+    - ENTER
+    - SPACE
     - ↹
-    - {t: BACKSPACE, s: Alt+ BACKSPACE}
-  - - {t: ⇧, h: sticky}
-    - {t: ⌃, h: sticky}
-    - {t: ⎇, h: sticky}
-    - {t: ⌘, h: sticky}
+  num:
+  - ['[', '7', '8', '9', '0', '0', '9', '8', '7', ']']
+  - - {t: '''', h: ⌘}
+    - {t: '4', h: ⎇}
+    - {t: '5', h: ⌃}
+    - {t: '6', h: ⇧}
+    - {t: '=', s: +}
+    - {t: '=', s: +}
+    - {t: '6', h: ⇧}
+    - {t: '5', h: ⌃}
+    - {t: '4', h: ⎇}
+    - {t: '''', h: ⌘}
+  - - {t: '`', h: ⌘, s: '~'}
+    - {t: '1', h: ⎇}
+    - {t: '2', h: ⌃}
+    - {t: '3', h: ⇧}
+    - {t: '-', s: _}
+    - {t: '-', s: _}
+    - {t: '3', h: ⇧}
+    - {t: '2', h: ⌃}
+    - {t: '1', h: ⎇}
+    - {t: '`', h: ⌘, s: '~'}
+  - - {t: ↹, type: held}
+    - SPACE
+    - ENTER
+    - ENTER
+    - SPACE
     - ↹
-    - ←
-    - ↓
-    - ↑
-    - →
-    - {t: ESC, s: '`'}
-  - - {t: ▽, type: trans}
-    - DEL
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - RET
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {type: held}
-    - {t: ▽, type: trans}
   fun:
-  - - {t: qwerty, h: toggle}
-    - MUTE
-    - VOL DN
-    - VOL UP
-    - OUT TOG
-    - {t: ▽, type: trans}
-    - F7
-    - F8
-    - F9
-    - F12
+  - [F12, F7, F8, F9, PSCRN, PRINTSCREEN, F9, F8, F7, F12]
+  - - {t: F11, h: ⌘}
+    - {t: F4, h: ⎇}
+    - {t: F5, h: ⌃}
+    - {t: F6, h: ⇧}
+    - SCROLLLOCK
+    - SCROLLLOCK
+    - {t: F6, h: LEFT SHIFT}
+    - {t: F5, h: ⌃}
+    - {t: F4, h: ⎇}
+    - {t: F11, h: ⌘}
+  - - {t: F10, h: ⌘}
+    - {t: F1, h: ⎇}
+    - {t: F2, h: ⌃}
+    - {t: F3, h: ⇧}
+    - {t: PAUSE BREAK, type: held}
+    - PAUSE BREAK
+    - {t: F3, h: ⇧}
+    - {t: F2, h: ⌃}
+    - {t: F1, h: ⎇}
+    - {t: F10, h: ⌘}
+  - [↹, SPACE, ENTER, ENTER, SPACE, ↹]
+  med:
   - - {t: BT, h: '0'}
     - {t: BT, h: '1'}
     - {t: BT, h: '2'}
     - {t: BT, h: '3'}
+    - {t: BT, h: '4', type: held}
     - {t: BT, h: '4'}
-    - {t: ▽, type: trans}
-    - F4
-    - F5
-    - F6
-    - F11
-  - - BT CLR
-    - PREV
-    - PP
-    - NEXT
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - F1
-    - F2
-    - F3
-    - F10
-  - - {t: ▽, type: trans}
+    - {t: BT, h: '3'}
+    - {t: BT, h: '2'}
+    - {t: BT, h: '1'}
+    - {t: BT, h: '0'}
+  - [PREV, STOP, PLAY, NEXT, BT CLR, BT CLR, NEXT, PLAY, STOP, PREV]
+  - [OUT TOG, BT PRV, BT NXT, '', '&sys_reset', '&sys_reset', '', BT NXT, BT PRV, OUT TOG]
+  - ['VOL
+
+      MUTE', 'VOL
+
+      UP', 'VOL
+
+      DOWN', 'VOL
+
+      DOWN', 'VOL
+
+      UP', 'VOL
+
+      MUTE']
+  mou:
+  - ['', AC SCROLL UP, '', AC SCROLL DOWN, '', '', AC SCROLL DOWN, '', AC SCROLL UP, '']
+  - - BSPC
+    - ''
+    - ''
+    - ''
     - {type: held}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {type: held}
-    - {t: ▽, type: trans}
+    - ''
+    - ''
+    - ''
+    - ''
+    - BSPC
+  - [⌘, ⎇, ⌃, ⇧, '', '', ⇧, ⌃, ⎇, ⌘]
+  - ['&mkp MCLK', '&mkp RCLK', '&mkp LCLK', '&mkp LCLK', '&mkp RCLK', '&mkp MCLK']
+  mir:
+  - - {t: ;, s: ':'}
+    - Y
+    - U
+    - L
+    - {t: J, h: med}
+    - {t: B, h: med}
+    - P
+    - F
+    - W
+    - Q
+  - - {t: O, h: ⌘}
+    - {t: I, h: ⎇}
+    - {t: E, h: ⌃}
+    - {t: N, h: ⇧}
+    - {t: M, h: mou}
+    - {t: G, h: mou}
+    - {t: T, h: ⇧}
+    - {t: S, h: ⌃}
+    - {t: R, h: ⎇}
+    - {t: A, h: ⌘}
+  - - {t: /, h: ⌘}
+    - {t: ., h: ⎇, s: '>'}
+    - {t: ',', h: ⌃, s: <}
+    - {t: H, h: ⇧}
+    - {t: K, h: fun}
+    - {t: V, h: fun}
+    - {t: D, h: ⇧}
+    - {t: C, h: ⌃}
+    - {t: X, h: ⎇}
+    - {t: Z, h: ⌘}
+  - - {t: DEL, h: num}
+    - {t: BSPC, h: nav}
+    - {t: ENTER, h: mir, type: held}
+    - {t: ENTER, h: mir}
+    - {t: SPACE, h: nav}
+    - {t: ↹, h: num}
+combos:
+- p: [20, 21]
+  k: DEL
+- p: [28, 29]
+  k: DEL
+- p: [0, 1]
+  k: ESC
+- p: [8, 9]
+  k: ESC
+- p: [0, 2]
+  k: ']'
+  l: [num]
+- p: [7, 9]
+  k: ']'
+  l: [num]
+- p: [20, 22]
+  k: \
+- p: [27, 29]
+  k: \
+- p: [31, 23, 22]
+  k: {t: nav, h: toggle}
+- p: [34, 26, 27]
+  k: {t: nav, h: toggle}
+- p: [30, 23, 22]
+  k: {t: num, h: toggle}
+- p: [26, 35, 27]
+  k: {t: num, h: toggle}
+- p: [23, 24, 22]
+  k: {t: fun, h: toggle}
+- p: [25, 26, 27]
+  k: {t: fun, h: toggle}
+- p: [23, 14, 22]
+  k: {t: mou, h: toggle}
+- p: [15, 26, 27]
+  k: {t: mou, h: toggle}
+- p: [4, 23, 22]
+  k: {t: med, h: toggle}
+- p: [5, 26, 27]
+  k: {t: med, h: toggle}
+- p: [0, 32]
+  k: {t: default, h: toggle}
+- p: [9, 33]
+  k: {t: default, h: toggle}
+- p: [10, 11]
+  k: BSPC
+- p: [18, 19]
+  k: BSPC
