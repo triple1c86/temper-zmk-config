@@ -1,3 +1,4 @@
+layout: {zmk_keyboard: temper}
 layers:
   default:
   - - Q
@@ -190,9 +191,9 @@ combos:
   k: ']'
   l: [num]
 - p: [20, 22]
-  k: \
+  k: {t: \, s: '|'}
 - p: [27, 29]
-  k: \
+  k: {t: \, s: '|'}
 - p: [31, 23, 22]
   k: {t: nav, h: toggle}
 - p: [34, 26, 27]
