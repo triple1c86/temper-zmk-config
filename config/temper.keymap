@@ -4,7 +4,6 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
@@ -25,10 +24,8 @@
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
             #binding-cells = <2>;
             tapping-term-ms = <150>;
-            quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
@@ -201,7 +198,7 @@
 
         mou_layer {
             bindings = <
-  &none     &kp C_AC_SCROLL_UP  &mmv MOVE_UP    &kp C_AC_SCROLL_DOWN  &none        &none      &kp C_AC_SCROLL_DOWN  &mmv MOVE_UP    &kp C_AC_SCROLL_UP  &none
+  &none     &msc SCRL_UP        &mmv MOVE_UP    &msc SCRL_DOWN        &none        &none      &msc SCRL_DOWN        &mmv MOVE_UP    &msc SCRL_UP        &none
   &kp BSPC  &mmv MOVE_LEFT      &mmv MOVE_DOWN  &mmv MOVE_RIGHT       &none        &none      &mmv MOVE_LEFT        &mmv MOVE_DOWN  &mmv MOVE_RIGHT     &kp BSPC
   &kp LGUI  &kp LALT            &kp LCTRL       &kp LSHFT             &none        &none      &kp RSHFT             &kp RCTRL       &kp RALT            &kp RGUI
                                 &mkp MCLK       &mkp RCLK             &mkp LCLK    &mkp LCLK  &mkp RCLK             &mkp MCLK
