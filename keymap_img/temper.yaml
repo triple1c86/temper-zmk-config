@@ -39,7 +39,7 @@ layers:
     - {t: DEL, h: num}
   nav:
   - [HOME, PAGE UP, UP ARROW, PAGE DOWN, END, END, PAGE DOWN, UP ARROW, PAGE UP, HOME]
-  - [⌘, LEFT ARROW, DOWN ARROW, →, ⇪, CAPS, →, DOWN ARROW, ←, ⌘]
+  - [⌘, LEFT ARROW, DOWN ARROW, →, ⇪, CAPS, LEFT ARROW, DOWN ARROW, RIGHT ARROW, ⌘]
   - [⌘, ⎇, ⌃, ⇧, INS, INS, ⇧, ⌃, ⎇, ⌘]
   - - ↹
     - {t: SPACE, type: held}
@@ -110,7 +110,7 @@ layers:
     - {t: BT, h: '1'}
     - {t: BT, h: '0'}
   - [PREV, STOP, PLAY, NEXT, BT CLR, BT CLR, NEXT, PLAY, STOP, PREV]
-  - [OUT TOG, BT PRV, BT NXT, '', '&sys_reset', '&sys_reset', '', BT NXT, BT PRV, OUT TOG]
+  - [OUT TOG, ☀↑, ☀↓, BRIGHTNESS AUTO, '&sys_reset', '&sys_reset', BRIGHTNESS AUTO, ☀↓, ☀↑, OUT TOG]
   - ['VOL
 
       MUTE', 'VOL
@@ -125,16 +125,16 @@ layers:
 
       MUTE']
   mou:
-  - ['', AC SCROLL UP, '', AC SCROLL DOWN, '', '', AC SCROLL DOWN, '', AC SCROLL UP, '']
+  - ['', '&msc SCRL_UP', '&mmv MOVE_UP', '&msc SCRL_DOWN', '', '', '&msc SCRL_DOWN', '&mmv MOVE_UP', '&msc SCRL_UP', '']
   - - BSPC
-    - ''
-    - ''
-    - ''
+    - '&mmv MOVE_LEFT'
+    - '&mmv MOVE_DOWN'
+    - '&mmv MOVE_RIGHT'
     - {type: held}
     - ''
-    - ''
-    - ''
-    - ''
+    - '&mmv MOVE_LEFT'
+    - '&mmv MOVE_DOWN'
+    - '&mmv MOVE_RIGHT'
     - BSPC
   - [⌘, ⎇, ⌃, ⇧, '', '', ⇧, ⌃, ⎇, ⌘]
   - ['&mkp MCLK', '&mkp RCLK', '&mkp LCLK', '&mkp LCLK', '&mkp RCLK', '&mkp MCLK']
