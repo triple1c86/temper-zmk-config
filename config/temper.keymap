@@ -202,7 +202,7 @@
 
         mou_layer {
             bindings = <
-  &none     &msc SCRL_UP        &mmv MOVE_UP    &msc SCRL_DOWN        &none        &none      &msc SCRL_DOWN        &mmv MOVE_UP    &msc SCRL_UP        &none
+  &none     &kp C_AC_SCROLL_UP  &mmv MOVE_UP    &kp C_AC_SCROLL_DOWN  &none        &none      &kp C_AC_SCROLL_DOWN  &mmv MOVE_UP    &kp C_AC_SCROLL_UP  &none
   &kp BSPC  &mmv MOVE_LEFT      &mmv MOVE_DOWN  &mmv MOVE_RIGHT       &none        &none      &mmv MOVE_LEFT        &mmv MOVE_DOWN  &mmv MOVE_RIGHT     &kp BSPC
   &kp LGUI  &kp LALT            &kp LCTRL       &kp LSHFT             &none        &none      &kp RSHFT             &kp RCTRL       &kp RALT            &kp RGUI
                                 &mkp MCLK       &mkp RCLK             &mkp LCLK    &mkp LCLK  &mkp RCLK             &mkp MCLK
