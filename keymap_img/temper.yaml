@@ -125,7 +125,7 @@ layers:
 
       MUTE']
   mou:
-  - ['', '&msc SCRL_UP', '&mmv MOVE_UP', '&msc SCRL_DOWN', '', '', '&msc SCRL_DOWN', '&mmv MOVE_UP', '&msc SCRL_UP', '']
+  - ['', AC SCROLL UP, '&mmv MOVE_UP', AC SCROLL DOWN, '', '', AC SCROLL DOWN, '&mmv MOVE_UP', AC SCROLL UP, '']
   - - BSPC
     - '&mmv MOVE_LEFT'
     - '&mmv MOVE_DOWN'
