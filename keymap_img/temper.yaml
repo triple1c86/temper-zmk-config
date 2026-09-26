@@ -110,7 +110,7 @@ layers:
     - {t: BT, h: '1'}
     - {t: BT, h: '0'}
   - [PREV, STOP, PLAY, NEXT, BT CLR, BT CLR, NEXT, PLAY, STOP, PREV]
-  - [OUT TOG, ☀↑, ☀↓, BRIGHTNESS AUTO, '&sys_reset', '&sys_reset', BRIGHTNESS AUTO, ☀↓, ☀↑, OUT TOG]
+  - [OUT TOG, ☀↓, ☀↑, BRIGHTNESS AUTO, '&sys_reset', '&sys_reset', BRIGHTNESS AUTO, ☀↑, ☀↓, OUT TOG]
   - ['VOL
 
       MUTE', 'VOL
@@ -125,7 +125,7 @@ layers:
 
       MUTE']
   mou:
-  - ['', '&scrl_up', '&mmv MOVE_UP', '&scrl_down', '', '', '&scrl_down', '&mmv MOVE_UP', '&scrl_up', '']
+  - [PAGE UP, '&scrl_up', '&mmv MOVE_UP', '&scrl_down', PAGE DOWN, PAGE DOWN, '&scrl_down', '&mmv MOVE_UP', '&scrl_up', PAGE UP]
   - - BSPC
     - '&mmv MOVE_LEFT'
     - '&mmv MOVE_DOWN'
